@@ -50,7 +50,7 @@ const Page = () => {
 
   return (
     <div className='container'>
-      <h1>Quiz Page</h1>
+      <h1>ASI CANDIDATE QUIZ</h1>
       {!showResult ? (
         <div className='quiz-container'>
           <h3>Question: {activeQuestion + 1}/{questions.length}</h3>

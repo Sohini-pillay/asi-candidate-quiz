@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,36 +8,49 @@
 
 html, body {
   overflow-x: hidden;
-  background-color: #000925;
+  background-color: #fff; 
+  color: #000; 
+  font-family: 'Soleil', sans-serif;
 }
 
 main {
   padding: 1rem;
 }
 
-h1, h2 {
-  color: #eee;
+h1, .title {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Soleil', sans-serif;
+  font-weight: 600;
 }
 
 h3 {
   padding-bottom: 2rem;
-  color: #000105;
+  color: #000;
+  font-family: 'Soleil', sans-serif;
+  font-weight: 600; 
   font-size: 1.8rem;
 }
 
-button {
+button, .btn-disabled {
   padding: 16px 8px;
   width: 100%;
   margin-top: 12px;
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #808080;
-  color: #f8f8f8;
+  background-color: #4CAF50; 
+  color: #fff;
+  border-color: #fff;
 }
 
 .btn-disabled {
-  background-color: lightgray;
+  background-color: #8C8C8C;
 }
 
 li {
@@ -43,18 +58,18 @@ li {
   cursor: pointer;
   margin: 9px 0;
   padding: 16px 8px;
-  color: #000105;
-  border: 1px solid lightgray;
+  color: #000; 
+  border: 1px solid #4CAF50; 
 }
 
 .li-hover:hover {
-  background-color: #d8d8d8;
-  columns: #fff;
+  background-color: #4CAF50; 
+  color: #fff; 
 }
 
 .li-selected {
   color: #fff;
-  background-color: #000925;
+  background-color: #4CAF50; 
 }
 
 .container {
@@ -65,10 +80,11 @@ li {
 }
 
 .quiz-container {
-  background-color: #f8f8f8;
+  background-color: #fff; 
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 4px;
+  border: 2px solid #000;
 }
 
 .container p {

@@ -4,7 +4,12 @@ export default function Home() {
   return (
     <main>
       <div className="container">
-        <h1>ASI Candidate Quiz</h1>
+        <h1>MMG ASI CANDIDATE PREVIEW</h1>
+        <Link href='/about'>
+        <button>
+          About Page
+        </button>
+        </Link>
         <Link href='/quiz'>
         <button>
           Start Quiz!
