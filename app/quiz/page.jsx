@@ -24,7 +24,7 @@ const Page = () => {
   };
 
   const calculateResult = () => {
-    let answerFrequency = { A: 0, B: 0, C: 0, D: 0 };
+    let answerFrequency = { A: 0, B: 0, C: 0, D: 0, E: 0 };
     Object.values(selectedAnswers).forEach(answer => {
       answerFrequency[answer] = (answerFrequency[answer] || 0) + 1;
     });
@@ -38,7 +38,7 @@ const Page = () => {
     // Handling multiple top results
     if (topCategories.length > 1) {
       // If you want to return a string indicating a tie
-      return `Tie between: ${topCategories.join(', ')}.`;
+      return `Tie between ${topCategories.map(category => quiz.results[category]).join(' and ')}.`;
       // If you want to return an array of tied results for further processing
       // return topCategories.map(category => results[category]);
     } else {
@@ -71,7 +71,7 @@ const Page = () => {
       ) : (
         <div className='quiz-container'>
           <h3>Results</h3>
-          <p>Your Personality Type: {calculateResult()}</p>
+          <p>Your ASI Presidential Candidate Match: {calculateResult()}</p>
           <button onClick={() => window.location.reload()}>Restart</button>
         </div>
       )}
