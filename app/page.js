@@ -72,7 +72,7 @@ const Page = () => {
         <div className='quiz-container'>
           <h3>Results</h3>
           <p>Your ASI Presidential Candidate Match: <b>{calculateResult()}</b></p>
-          <a href = "https://www.asi.calpoly.edu/get-involved/student-government/recruitment-elections/candidate-page/">Click here to learn more about all the candidates</a>
+          <a href = "https://www.asi.calpoly.edu/get-involved/student-government/recruitment-elections/candidate-page/" target="_top">Click here to learn more about all the candidates</a>
           <button onClick={() => window.location.reload()}>Restart</button>
         </div>
       )}
