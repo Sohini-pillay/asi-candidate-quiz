@@ -38,7 +38,7 @@ const Page = () => {
     // Handling multiple top results
     if (topCategories.length > 1) {
       // If you want to return a string indicating a tie
-      return `Tie between ${topCategories.map(category => quiz.results[category]).join(' and ')}.`;
+      return `${topCategories.map(category => quiz.results[category]).join(' and ')}`;
       // If you want to return an array of tied results for further processing
       // return topCategories.map(category => results[category]);
     } else {
@@ -71,7 +71,8 @@ const Page = () => {
       ) : (
         <div className='quiz-container'>
           <h3>Results</h3>
-          <p>Your ASI Presidential Candidate Match: {calculateResult()}</p>
+          <p>Your ASI Presidential Candidate Match: <b>{calculateResult()}</b></p>
+          <a href = "https://www.asi.calpoly.edu/get-involved/student-government/recruitment-elections/candidate-page/">Click here to learn more about all the candidates</a>
           <button onClick={() => window.location.reload()}>Restart</button>
         </div>
       )}
